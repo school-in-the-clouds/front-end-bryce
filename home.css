@@ -1,0 +1,30 @@
+/*For the green #DBFF33
+For the red #990033*/
+
+
+
+.container1 .items1{
+    display:flex;
+}
+.container2 .items2{
+    display:flex;
+}
+.container3 .items3{
+    display:flex;
+}
+.container4 .items4{
+    display:flex;
+}
+.div-btn{
+    text-align:center;
+  }
+  .btn{
+      width:50%;
+      height:250px;
+      background-image: linear-gradient(to right,#ABFF03,#990033);
+      color:#31752F;
+    font-size:5rem;
+    border-style:solid;
+    border-color:#31752F;
+    border-width:1rem;
+  }
