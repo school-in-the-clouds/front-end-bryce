@@ -1,5 +1,5 @@
 
-// custom scrollbar
+
 (function(scope) {
   var dragging = false;
   var lastY = 0;
