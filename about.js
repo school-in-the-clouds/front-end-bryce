@@ -16,10 +16,10 @@ test.addEventListener("mouseenter", function( event ) {
 // is moved over a different list item
 test.addEventListener("mouseover", function( event ) {   
   // highlight the mouseover target
-  event.target.style.color = "orange";
+  event.target.style.color = "red";
 
   // reset the color after a short delay
   setTimeout(function() {
     event.target.style.color = "";
-  }, 500);
+  }, 2500);
 }, false);
