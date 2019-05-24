@@ -1,25 +1,20 @@
-$(function() {
-  $("a.page-scroll").bind("click", function(event) {
-    var $anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $($anchor.attr("href")).offset().top
-        },
-        1500,
-        "easeInOutExpo"
-      );
-    event.preventDefault();
-  });
-});
+function myFunction() {
+  alert("Thank you for joining our family!");
+}
+function Function2(){
+  alert("I would have loved to have added a login but unfortunately my frontend dude never finished");
+}
 
-// Highlight the top nav as scrolling occurs
-$("body").scrollspy({
-  target: ".navbar-fixed-top"
-});
 
-// Closes the Responsive Menu on Menu Item Click
-$(".navbar-collapse ul li a").click(function() {
-  $(".navbar-toggle:visible").click();
-});
+var x = document.getElementById("getLocation");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude; 
